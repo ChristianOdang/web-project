@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="slackInfo">
+        <h1 data-testid="slackUserName">Johnson</h1>
+      </div>
+
+      <div id="slackDP">
+        <img
+          src="images/about-img.JPG" height="200" width="200"
+          alt="Your Slack Username"
+          data-testid="slackDisplayImage"
+        />
+      </div>
+
+      <div id="timeInfo">
+        <p data-testid="currentDayOfTheWeek">Thursday</p>
+        <p data-testid="currentUTCTime">00:00:00 UTC</p>
+      </div>
+
+      <div id="trackInfo">
+        <p data-testid="myTrack">Frontend</p>
+        <a
+          href="https://github.com/ChristianOdang/web-project"
+          data-testid="githubURL"
+          >Github Repository</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

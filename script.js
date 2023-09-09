@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentDate = new Date();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const currentDay = daysOfWeek[currentDate.getUTCDay()];
-    // Extract HH: MM : SS from UTC
-    const currentUTCTime = currentDate.toISOString().substr(11, 8);
+    // Get the current time in milliseconds
+    const currentUTCTime = currentDate.getTime();
 
     // update the HTML element with fetched data
     document.querySelector("[data-testid='currentDayOfTheWeek']").textContent = currentDay;
